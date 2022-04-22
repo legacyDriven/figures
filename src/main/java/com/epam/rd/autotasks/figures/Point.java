@@ -17,4 +17,14 @@ class Point {
         return y;
     }
 
+    public String pointsToString(){
+        StringBuilder sb = new StringBuilder();
+        sb.append("(").append(x).append(",").append(y).append(")");
+        return sb.toString();
+    }
+
+    @Override
+    public String toString() {
+        return pointsToString();
+    }
 }
